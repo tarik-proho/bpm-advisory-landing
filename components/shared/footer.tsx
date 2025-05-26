@@ -22,7 +22,7 @@ export function Footer() {
                     <div className="lg:col-span-2">
                         <div className="flex flex-col gap-4 items-center justify-center">
                             <Link href="/" aria-label="home" className="flex space-x-2">
-                                <img src={"/bpm-logo.png"} alt="logo" className="w-5/6 mx-auto" />
+                                <img src="/bpm-logo.png" alt="logo" className="w-5/6 mx-auto" />
                             </Link>
                             <div className="flex gap-8 mt-4">
                                 {links.map((link) => (
