@@ -35,7 +35,7 @@ export const Header = () => {
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                         <div className="flex w-full justify-between lg:w-auto">
                             <Link href="/" aria-label="home" className="flex items-center space-x-2">
-                                <img src={"/logo-bpm.png"} alt="logo" className="h-10 w-40" />
+                                <img src={"./logo-bpm.png"} alt="logo" className="h-10 w-40" />
                             </Link>
 
                             <button
