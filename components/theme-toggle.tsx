@@ -19,10 +19,11 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
     if (!theme || theme === "system") {
       setTheme("light")
     }
+    setTheme("light")
   }, [theme, setTheme])
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light")
+    setTheme(theme === "light" ? "light" : "light")
   }
 
   // Prevent hydration mismatch

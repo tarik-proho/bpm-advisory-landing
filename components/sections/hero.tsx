@@ -3,6 +3,7 @@ import { ArrowRight, ChevronRight } from "lucide-react"
 import { TextEffect } from "@/components/text-effect"
 import { AnimatedGroup } from "@/components/animated-group"
 import { Button } from "../ui/button"
+import { ContactDialog } from "../contact-dialog"
 
 const transitionVariants = {
     item: {
@@ -65,7 +66,7 @@ export default function Hero() {
                             <img
                                 src="./bg-hero.png"
                                 alt="background"
-                                className="absolute inset-x-0 -z-20  dark:block"
+                                className="absolute inset-x-0 -z-20 dark:block"
                                 width="3276"
                                 height="4095"
                             />
@@ -106,9 +107,7 @@ export default function Hero() {
                                     }}
                                     className="mt-12 flex flex-col items-center justify-around gap-2 md:flex-row"
                                 >
-                                    <Button asChild size="lg" className="px-8" variant="ghost">
-                                        <Link href="/contact">Kontaktirajte nas</Link>
-                                    </Button>
+                                    <ContactDialog />
                                 </AnimatedGroup>
                             </div>
                         </div>

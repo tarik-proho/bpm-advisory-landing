@@ -9,7 +9,7 @@ export default function RootLayout({children} : {children: React.ReactNode}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={true} disableTransitionOnChange>
           <Header />
           <div className="min-h-screen pt-20">{children}</div>
           <CallToAction />

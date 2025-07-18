@@ -103,13 +103,10 @@ export function ContactForm() {
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
           <CheckCircle className="h-6 w-6 text-green-600" />
         </div>
-        <h3 className="text-lg font-medium">
-          Hvala što ste nam poslali poruku! 
-          Odgovor na vaš upit će biti poslan na vasu e-mail adresu u najkraćem mogućem roku.</h3>
-        <p className="mt-2 text-muted-foreground">{submitResult.message}</p>
-        <Button className="mt-4" onClick={() => setSubmitResult(null)}>
-          Pošalji novu poruku
-        </Button>
+        <h3 className="text-xl font-medium">
+          Hvala što ste nam poslali poruku! <br />
+          Odgovor na vaš upit će biti poslan na naznačenu e-mail adresu u najkraćem mogućem roku.
+        </h3>
       </div>
     )
   }
